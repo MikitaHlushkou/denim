@@ -6,10 +6,10 @@ const Footer =()=>{
          <h2 className='footer-headline'>Nimes</h2>
          <nav className='footer-nav'>
              <ul>
-                 <li>1</li>
-                 <li>2</li>
-                 <li>3</li>
-                 <li>4</li>
+                 <li>Shop</li>
+                 <li>Delivery</li>
+                 <li>Service</li>
+                 <li>Sitemap</li>
              </ul>
          </nav>
          <ul className="footer-socialList">

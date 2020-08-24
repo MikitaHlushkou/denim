@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button/Button';
 
 const Promo = ()=>{
     return(
@@ -7,7 +8,7 @@ const Promo = ()=>{
            <div className='promo-container'>
                <div className='promo-card'>
                    <p>fall 2019</p>
-                   <button>Shop now</button>
+                  <Button text={`Shop now`} />
                </div>
            </div>
        </div>
