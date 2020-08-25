@@ -38,11 +38,15 @@ ul {
 }
 
 .grid {
+
   &-container {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
     background: #F1F2F4;
     padding-top: 3.3125rem;
+    & .arrowDownIcon{
+      margin-top: 20rem;
+    }
   }
 
   &-item {
