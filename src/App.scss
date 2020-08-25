@@ -2,6 +2,7 @@
 @import "src/Pages/MainPage/Components/Promo/styles";
 @import "src/Pages/MainPage/Components/Category/styles";
 @import "src/Pages/MainPage/Components/Button/styles";
+@import "src/Pages/MainPage/Components/Footer/styles";
 $f16: 1rem !default;
 $f18: 1.125rem !default;
 $f32: 2rem !default;
@@ -38,3 +39,33 @@ ul {
 
 
 
+@media screen and (max-width: 1100px) {
+  html{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 980px) {
+  html{
+    font-size: 12px;
+  }
+  .promo-card{
+    margin-top: 5.9375rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  html{
+    font-size: 10px;
+  }
+  .promo-image{
+    min-width: 20%;
+  }
+}
+@media screen and (max-width: 690px) {
+  html{
+    font-size: 9px;
+  }
+  .promo-image{
+    min-width: 10%;
+  }
+}
