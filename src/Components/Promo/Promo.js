@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
-import promoImage from '../../../../assets/images/promo.png';
+import promoImage from '../../assets/images/promo.png';
 
 const Promo = ()=>{
     return(
