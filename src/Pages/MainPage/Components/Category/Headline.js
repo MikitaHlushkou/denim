@@ -1,12 +1,12 @@
 import React from 'react';
 
-let Headline =(props)=>{
+let Headline =({headline})=>{
     return(
-<div className="headline-container">
-    <h2 className="headline">
-        {props.headline}
+<div className="category-container">
+    <h2 className="category-headline">
+        {headline}
     </h2>
-    <a className='headline-showLink' href="#">View all </a>
+    <a className='category-showLink' href="#">View all </a>
 </div>
     )
 }

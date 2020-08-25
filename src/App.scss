@@ -44,7 +44,8 @@ ul {
     grid-template-columns: 1fr 2fr 2fr 1fr;
     background: #F1F2F4;
     padding-top: 3.3125rem;
-    & .arrowDownIcon{
+
+    & .arrowDownIcon {
       margin-top: 20rem;
     }
   }
@@ -68,14 +69,14 @@ ul {
 
       & .headerPromotionHeadline {
         width: fit-content;
-        font-family: Anton,  "Work Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        font-family: Anton, "Work Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 128px;
         align-items: center;
         text-transform: uppercase;
         color: #151C22;
-        }
+      }
 
       & .btn {
         width: fit-content;
@@ -138,12 +139,80 @@ ul {
   &-item {
     width: fit-content;
     margin-left: 20%;
-       padding-bottom: 2.1875rem;
+    padding-bottom: 2.1875rem;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
 
 
+  }
+}
+
+.category {
+  margin-top: 8.3125rem;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-headline {
+    margin-left: 6.125rem;
+    margin-bottom: 4.375rem;
+    font-weight: bold;
+    font-size: $f32;
+  }
+
+  &-showLink {
+    margin-right: 6.125rem;
+    font-size: $f18;
+    font-weight: 500;
+    color: #151C22;
+    text-decoration: none;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 5rem;
+      margin-top: 21px;
+      margin-left: -5rem;
+      border-bottom: 2px solid #4e4e4e;
+
+    }
+  }
+}
+
+
+.item {
+  &-collection {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-card {
+    margin-right: 1.875rem;
+
+  }
+
+  &-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &-label {
+    text-align: left;
+    margin-top: 1.5625rem;
+
+    & > p {
+      font-weight: 500;
+      font-size: $f18;
+margin-bottom: 0.9375rem;;
+    }
+
+    & > span {
+      font-weight: bold;
+      font-size: $f16;
+    }
   }
 }

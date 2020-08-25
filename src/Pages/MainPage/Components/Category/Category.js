@@ -4,10 +4,10 @@ import ItemsCollection from '../Item/ItemsCollection';
 
 let Category = ({items,headline}) =>{
     return(
-  <div className={headline +'-container'}>
+  <section className="category">
 <Headline headline={headline} />
 <ItemsCollection items={items}/>
-  </div>
+  </section>
     )
 }
 
