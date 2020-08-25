@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderPromotion from './HeaderPromotion';
 
-let Header =()=>{
+let HeaderMainPage =()=>{
     return(
        <header>
         <h1> Nimes</h1>
@@ -9,4 +9,4 @@ let Header =()=>{
        </header>
     )
 }
-export default Header;
+export default HeaderMainPage;

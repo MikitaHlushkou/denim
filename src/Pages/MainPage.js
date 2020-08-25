@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../Components/Header/Header';
+import HeaderMainPage from '../Components/Header/HeaderMainPage';
 import Category from '../Components/Category/Category';
 import Promo from '../Components/Promo/Promo';
 import Footer from '../Components/Footer/Footer';
@@ -16,7 +16,7 @@ const itemArray = [{src:item1,type:'Jacket',price:120}, {src:item2,type:'Overall
 let MainPage = () => {
     return (
         <div>
-            <Header/>
+            <HeaderMainPage/>
             <main>
                 <Category items={itemArray} headline={`Bestsellers`}/>
                 <Promo/>
