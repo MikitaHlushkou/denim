@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 
-const Button = (props)=>{
-    return(
-        <button className={`btn`} disabled><p className={`btn-text`}>{props.text}</p></button>
+const Button = ({text, additionalClass}) => {
+    return (
+        <Fragment>  {additionalClass ?
+            <button className={`btn btn-${additionalClass}`} disabled><p className={`btn-text`}>{text}</p></button> :
+            <button className={`btn`} disabled><p className={`btn-text`}>{text}</p>
+            </button>}</Fragment>
+
+
     )
 }
 
