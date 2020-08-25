@@ -1,0 +1,23 @@
+.btn {
+  width: fit-content;
+  background: #151C22;
+  margin-top: 4.8125rem;
+  padding: 1.6875rem 1.5rem;
+  &-text {
+
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f16;
+    line-height: 19px;
+    font-style: normal;
+
+    color: #FFFFFF;
+
+  }
+
+  &-promo {
+padding: 1.6875rem 3.75rem;
+    margin-top: 2.125rem;
+  }
+}

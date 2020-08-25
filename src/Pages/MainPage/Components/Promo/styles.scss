@@ -1,0 +1,37 @@
+.promo {
+  margin-top: 8.125rem;
+  display: flex;
+  justify-content: center;
+&-image{
+  max-width: 100%;
+  height: auto;
+}
+  &-container {
+    width: 29.375rem;
+    background: url('../../../../assets/images/диагональ.png');
+
+  }
+
+  &-card {
+    width: 20.625rem;
+    height: 10.5rem;
+    margin-top: 1.9375rem;
+    margin-bottom: 1.9375rem;
+    padding: 4.375rem 0 4.375rem 4.375rem;
+    background: #F1F2F4;
+    text-align: left;
+  }
+
+  &-description {
+    font-size: $f18;
+    color: #727A82;
+
+    & span {
+      display: inline-block;
+      margin-top: 1.25rem;
+      font-weight: bold;
+      font-size: $f32;
+      color: #151C22;
+    }
+  }
+}
