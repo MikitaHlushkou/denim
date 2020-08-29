@@ -1,8 +1,8 @@
 import React from 'react';
 
-let ItemCard =({src,type,price})=>{
+let ItemCard =({src,type,price, styles})=>{
     return(
-        <div className={`item-card`}>
+        <div className={ styles['item-card']}>
         <a href="#">
             <div>
                 <img className={`item-image`} src={src} alt=""/>

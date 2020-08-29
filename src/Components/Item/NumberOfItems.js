@@ -1,11 +1,11 @@
 import React from 'react';
 import Button from '../Button/Button';
 
-let NumberOfItems=()=>{
+let NumberOfItems=({styles})=>{
     return(
         <div>
-            <div>Showing results</div>
-            <Button text={`Load more`} />
+            <div className={styles.results}> Showing 9 of 45 items</div>
+            <Button additionalClass={'loadMore'} text={`Load more`} />
         </div>
     )
 }

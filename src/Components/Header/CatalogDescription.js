@@ -1,19 +1,20 @@
 import React from 'react';
 import Logo from '../../assets/images/HeaderDescription2.jpg';
+import catalogStyles from './catalogStyles.module.scss';
 let CatalogDescription =()=>{
     return(
-        <div className='headerDescription headerDescription-container'>
-        <div className='headerDescription-item'>
-            <ul className="breadcrumbs">
-                <li className="breadcrumbs-item">All Categrories</li>
-                <li className="breadcrumbs-item"> Woman</li>
-                <li className="breadcrumbs-item">Jackets</li>
+        <div className={catalogStyles['headerDescription']}>
+        <div className={catalogStyles['headerDescription-item']}>
+            <ul className={catalogStyles.breadcrumbs}>
+                <li className={catalogStyles['breadcrumbs-item']}>All Categrories</li>
+                <li className={catalogStyles['breadcrumbs-item']}> Woman</li>
+                <li className={catalogStyles['breadcrumbs-item']}>Jackets</li>
             </ul>
-            <p>Denim Collection<br/>Fall 2019</p>
+            <p className={catalogStyles['collection-description']}>Denim Collection<br/>Fall 2019</p>
         </div>
-            <div className="headerDescription-item">
-                <img src={Logo} alt=""/>
-            </div>s
+            <div className={catalogStyles['headerDescription-item']}>
+                <img className={catalogStyles['headerDescription-image']} src={Logo} alt=""/>
+            </div>
         </div>
     )
 }

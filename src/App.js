@@ -6,7 +6,7 @@ import Catalog from './Pages/Catalog';
 function App() {
   return (
     <div className="App">
-{/*<MainPage/>*/}
+<MainPage/>
 <Catalog/>
     </div>
   );

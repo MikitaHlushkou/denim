@@ -1,11 +1,11 @@
 import React from 'react';
 
-let CollectionList = ()=>{
+let CollectionList = ({style})=>{
     return(
-        <ul className="collection">
-            <li className="collection-item">Woman</li>
-            <li className="collection-item">Man</li>
-            <li className="collection-item">New</li>
+        <ul className={style['collection']}>
+            <li className={style['collection-item']}>Woman</li>
+            <li className={style['collection-item']}>Man</li>
+            <li className={style['collection-item']}>New</li>
         </ul>
     )
 }

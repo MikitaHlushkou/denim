@@ -1,8 +1,9 @@
-@import "Components/Header/styles";
+@import "Components/Header/styles.module";
 @import "Components/Promo/styles";
-@import "Components/Category/styles";
+@import "Components/Category/styles.module";
 @import "Components/Button/styles";
 @import "Components/Footer/styles";
+@import "Components/Item/styles.module";
 $f16: 1rem !default;
 $f18: 1.125rem !default;
 $f32: 2rem !default;
@@ -35,8 +36,6 @@ $f32: 2rem !default;
 ul {
   list-style: none;
 }
-
-
 
 
 @media screen and (max-width: 1100px) {

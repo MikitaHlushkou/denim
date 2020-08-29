@@ -33,35 +33,3 @@
 }
 
 
-.item {
-  &-collection {
-    display: flex;
-    justify-content: center;
-  }
-
-  &-card {
-    margin-right: 1.875rem;
-
-  }
-
-  &-image {
-    max-width: 100%;
-    height: auto;
-  }
-
-  &-label {
-    text-align: left;
-    margin-top: 1.5625rem;
-
-    & > p {
-      font-weight: 500;
-      font-size: $f18;
-      margin-bottom: 0.9375rem;;
-    }
-
-    & > span {
-      font-weight: bold;
-      font-size: $f16;
-    }
-  }
-}

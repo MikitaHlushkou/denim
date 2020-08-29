@@ -1,9 +1,9 @@
 import React from 'react';
 
-let HeaderIcons =()=>{
+let HeaderIcons =({style})=>{
     return(
-        <div className="headerIcons">
-            <a className={`headerIcons-link`} href="#">
+        <div className={style.headerIcons}>
+            <a className={style[`headerIcons-link`]} href="#">
                 <svg className={` searchIcon`} width="22" height="20" viewBox="0 0 22 20" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -11,7 +11,7 @@ let HeaderIcons =()=>{
                         stroke="#151C22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </a>
-            <a className={`headerIcons-link`} href="#">
+            <a className={style[`headerIcons-link`]} href="#">
                 <svg className={` basketIcon`} width="20" height="20" viewBox="0 0 20 20" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <path
