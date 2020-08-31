@@ -1,0 +1,28 @@
+$f18: 1.125rem !default;
+.item {
+  &-card {
+
+
+    &:last-child {
+      grid-column: 3 / 5;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 4;
+      justify-content: center;
+    }
+  }
+
+  &-collection {
+    width: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 4.125rem;
+    row-gap: 3.125rem;
+
+  }
+}
+.results{
+  margin-top: 4.6875rem;
+}
+
