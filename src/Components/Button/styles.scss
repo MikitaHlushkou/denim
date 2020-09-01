@@ -17,11 +17,31 @@
   }
 
   &-promo {
-padding: 1.6875rem 3.75rem;
+    padding: 1.6875rem 3.75rem;
     margin-top: 2.125rem;
   }
-  &-loadMore{
+
+  &-loadMore {
     padding: 1.6875rem 3.75rem;
     margin-bottom: 8.125rem;
+  }
+
+  &-apply {
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+
+  &-clearAll {
+    width: 100%;
+
+
+    margin-top: 0;
+    background: #FFFFFF;
+
+    & p {
+      font-style: normal;
+      font-size: 0.875rem;
+      color: #151C22;
+    }
   }
 }

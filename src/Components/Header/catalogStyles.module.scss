@@ -14,7 +14,7 @@ $f32: 2rem !default;
     font-size: $f16;
     line-height: 19px;
   }
-  &-description{
+  &-description {
     margin-top: 2.4375rem;
     font-weight: bold;
     font-size: $f32;
@@ -36,7 +36,8 @@ $f32: 2rem !default;
   &-item {
 
   }
-  &-image{
+
+  &-image {
     max-width: 100%;
     height: auto;
   }
@@ -56,11 +57,28 @@ $f32: 2rem !default;
 .breadcrumbs {
   width: fit-content;
   display: flex;
-margin-top: 4.5625rem;
+  margin-top: 4.5625rem;
+
   &-item {
     margin-right: 1.8125rem;
-  &:last-child{
-    margin-right: 5.4375rem;
+    color: #727A82;
+&:nth-child(-n+2){
+  &:after {
+    position: absolute;
+    content: '';
+    height: 13px;
+    transform: rotate(30deg);
+    margin-left: 1rem;
+    border: 1px solid #727A82;
   }
+}
+
+    &:last-child {
+      margin-right: 5.4375rem;
+    }
+    &:hover{
+      color: #151C22;
+
+    }
   }
 }

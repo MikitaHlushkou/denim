@@ -53,7 +53,7 @@ let Catalog = () => {
             <HeaderCatalogPage/>
             <CatalogDescription/>
             <main>
-                <Filter styles={CatalogStyles}/>
+                <Filter />
                 <ItemsCollection styles={CatalogStyles} items={catalogArray}/>
                 <NumberOfItems styles={CatalogStyles}/>
             </main>

@@ -13,7 +13,12 @@ $f32: 2rem !default;
   font-size: $f18;
   text-align: left;
   border: 2px solid #151C22;
-&-btn{
+&> button{
+  font-size: $f18;
+  background: none;
+  outline: none;
+}
+  &-btn{
   width: 100%;
 }
   & .filter-btnContainer{
