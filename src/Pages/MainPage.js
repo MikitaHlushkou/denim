@@ -12,15 +12,16 @@ import jacketsCategory from '../assets/images/Jackets-category.png';
 import shirtsCategory from '../assets/images/Shirts-category.png';
 import overallsCategory from '../assets/images/Overalls-category.png';
 
-const categoryArray = [{src: jeansCategory, type: 'Jeans'}, {
+const categoryArray = [{id:1,src: jeansCategory, type: 'Jeans'}, {id:4,
     src: shirtsCategory,
     type: 'Shirts'
-}, {src: jacketsCategory, type: 'Jackets'}, {src: overallsCategory, type: 'Overalls'}]
-const itemArray = [{src: item1, type: 'Jacket', price: 120}, {src: item2, type: 'Overalls', price: 140}, {
+}, {id:2,src: jacketsCategory, type: 'Jackets'}, {id:3,src: overallsCategory, type: 'Overalls'}]
+const itemArray = [{id: 1, src: item1, type: 'Jacket', price: 120}, {id: 2, src: item2, type: 'Overalls', price: 140}, {
+    id: 3,
     src: item3,
     type: 'Jacket',
     price: 90
-}, {src: item4, type: 'Overalls', price: 160}];
+}, {id:4,src: item4, type: 'Overalls', price: 160}];
 let MainPage = () => {
     return (
         <div>

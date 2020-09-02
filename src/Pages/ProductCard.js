@@ -19,11 +19,15 @@ const itemArray = [{src: item1, type: 'Jacket', price: 120}, {src: item2, type: 
     type: 'Jacket',
     price: 90
 }, {src: item4, type: 'Overalls', price: 160}];
+const pict = [{id: '1', images: [prod1, prod2, prod3, prod4, prod5]}, {
+    id: '2',
+    images: [prod5, prod4, prod3, prod2, prod1]
+}]
 
 class ProductCard extends React.Component {
     state = {
         index: 0,
-        picList: [prod1, prod2, prod3, prod4, prod5]
+        picList: [],
     }
     Switch = (direction) => {
         if (direction === 'right') {
@@ -44,6 +48,19 @@ class ProductCard extends React.Component {
         }
     }
 
+    id = this.props.match.params.id;
+    filtered = pict.filter(el => el.id === this.id)[0];
+
+    componentWillMount() {
+
+        this.setState({
+            picList: this.filtered.images
+        })
+    }
+
+    componentDidMount() {
+    }
+
     render() {
         return (
             <div>
@@ -51,7 +68,7 @@ class ProductCard extends React.Component {
                 <main>
                     <section className="productCard">
                         <div onClick={() => this.Switch('left')} className="arrow arrow-left"></div>
-                        <ProductGallery state={this.state}/>
+                        <ProductGallery id={this.id} filter={this.filtered.images} state={this.state}/>
                         <div onClick={() => this.Switch('right')} className="arrow arrow-right"></div>
                         <FullProductInfo/>
                     </section>

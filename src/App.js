@@ -11,7 +11,7 @@ function App() {
             <div className="App">
                 <Route path='/main' component={MainPage}/>
                 <Route path='/catalog' component={Catalog}/>
-                <Route path='/product' component={ProductCard}/>
+                <Route path='/product/:id?' component={ProductCard}/>
             </div>
         </BrowserRouter>
     );
