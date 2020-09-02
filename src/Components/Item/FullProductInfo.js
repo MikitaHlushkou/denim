@@ -28,7 +28,7 @@ const FullProductInfo = () => {
                 </ul>
             </div>
             <div>$160</div>
-            <Button text={`Add to cart`}/>
+            <Button additionalClass={`addToCart`} text={`Add to cart`}/>
         </div>
     )
 }
