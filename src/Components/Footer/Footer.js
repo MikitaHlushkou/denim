@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer = ({additionalClass}) => {
     return (
-        <footer className='footer'>
+        <footer className={`footer footer-${additionalClass}`}>
             <h2 className='footer-headline'>Nimes</h2>
             <nav className='footer-nav'>
                 <ul className='footer-navList'>
