@@ -15,37 +15,45 @@ import Footer from "../Components/Footer/Footer";
 import ProductGallery from "../Components/Item/ProductGallery";
 import FullProductInfo from "../Components/Item/FullProductInfo";
 
-const itemArray = [{id:1,src: item1, type: 'Jacket', price: 120}, {id:2,src: item2, type: 'Overalls', price: 140}, {id:3,
+const itemArray = [{id: 1, src: item1, type: 'Jacket', price: 120}, {id: 2, src: item2, type: 'Overalls', price: 140}, {
+    id: 3,
     src: item3,
     type: 'Jacket',
     price: 90
-}, {id:4,src: item4, type: 'Overalls', price: 160}];
-const pict = [{id: '1', images: [prod1, prod2, prod3, prod4, prod5]}, {
+}, {id: 4, src: item4, type: 'Overalls', price: 160}];
+const ProductsArray = [{
+    id: '1',
+    images: [prod1, prod2, prod3, prod4, prod5],
+    category: 'Overalls',
+    sizes: ['xs', 's', 'm', 'l', 'xl'],
+    imag:[1,2,3,4,5],
+    price: 160
+}, {
     id: '2',
-    images: [prod5, prod4, prod3, prod2, prod1]
+    images: [prod5, prod3, prod1], category: 'Jeans', sizes: ['xs', 's', 'm'], price: 140
 }]
 
 let ProductCard = () => {
-    const [picList, setPicList] = useState([]);
+    const [ProductFiltered, setProductFiltered] = useState({images:['test1',prod4],sizes:['l']});
 
     let Switch = (direction) => {
         if (direction === 'right') {
-            let arr = [...picList];
-            let prev = arr.shift();
-            arr.push(prev);
-            setPicList(arr);
+            let arr = {...ProductFiltered};
+            let prev = arr.images.shift();
+            arr.images.push(prev);
+            setProductFiltered(arr);
         } else if (direction === 'left') {
-            let arr = [...picList];
-            let prev = arr.pop();
-            arr.unshift(prev);
-            setPicList(arr);
+            let arr = {...ProductFiltered};
+            let prev = arr.images.pop();
+            arr.images.unshift(prev);
+            setProductFiltered(arr);
         }
     }
     const match = useRouteMatch('/product/:id?');
     let id = match.params.id;
-    let filtered = pict.filter(el => el.id === id)[0];
+    let filtered = ProductsArray.filter(el => el.id === id)[0];
 
-    useEffect(() => id?setPicList(filtered.images):[],[])
+    useEffect(() => id ? setProductFiltered(filtered) : [])
 
 
     return (
@@ -53,10 +61,10 @@ let ProductCard = () => {
             <HeaderCatalogPage/>
             <main>
                 <section className="productCard">
-                    <div onClick={() => Switch('left')} className="arrow arrow-left"></div>
-                                      <ProductGallery id={id} state={picList}/>
-                    <div onClick={() => Switch('right')} className="arrow arrow-right"></div>
-                    <FullProductInfo/>
+                    <div onClick={() => Switch('left')} className="arrow arrow-left"/>
+                    <ProductGallery id={id} state={ProductFiltered}/>
+                    <div onClick={() => Switch('right')} className="arrow arrow-right"/>
+                    <FullProductInfo state={ProductFiltered}/>
                 </section>
                 <Category items={itemArray} headline={`You may also like`}/>
             </main>
