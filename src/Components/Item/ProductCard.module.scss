@@ -11,10 +11,12 @@
   border-left: 1px solid #151C22;
   border-bottom: 1px solid #151C22;
   margin-top: 12.125rem;
-&-left{
-  margin-left: 6.125rem;
-  transform: rotate(45deg);
-}
+
+  &-left {
+    margin-left: 6.125rem;
+    transform: rotate(45deg);
+  }
+
   &-right {
     transform: rotate(225deg);
   }
@@ -67,6 +69,10 @@
     font-size: 1.125rem;
     margin-bottom: 1.5625rem;
   }
+  &-price{
+    font-weight: bold;
+    font-size: $f18
+  }
 }
 
 .size {
@@ -74,8 +80,15 @@
   margin-bottom: 2.5rem;
 
   &-item {
+    text-transform: uppercase;
+    font-size: $f18;
+    color: #727A82;
+
     &:not(:last-child) {
       margin-right: 1.25rem;
+    }
+    &:hover{
+      color: #151C22;;
     }
   }
 }

@@ -25,7 +25,7 @@ const FullProductInfo = ({state}) => {
                     {size}
                 </ul>
             </div>
-            <div>$ {price}</div>
+            <div className='product-price'>$ {price}</div>
             <Button additionalClass={`addToCart`} text={`Add to cart`}/>
         </div>
     )
