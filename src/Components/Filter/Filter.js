@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from "../Button/Button";
-let Filter = () => {
+let Filter = ({filter,set}) => {
     function myFunction(e) {
         e.target.nextSibling.classList.toggle('show')
 
@@ -20,7 +20,7 @@ let Filter = () => {
                 <div onClick={myFunction} className="dropbtn">Color</div>
                 <div id="drop" className="dropdown-content dropdown-content--secondary">
                     <div className="colorContainer">
-                        <div className="colorCircle colorCircle-lightGray "/>
+                        <div onClick={()=>filter('color','red')} className="colorCircle colorCircle-lightGray "/>
                         <div className="colorCircle colorCircle-darkBlue"/>
                         <div className="colorCircle colorCircle-gray"/>
                         <div className="colorCircle colorCircle-black"/>
@@ -33,10 +33,10 @@ let Filter = () => {
                 <div onClick={myFunction} className="dropbtn">Collection</div>
                 <div id="drop" className="dropdown-content dropdown-content--secondary">
                     <div className="collection">
-                        <div className="collection-name">Casual</div>
-                        <div className="collection-name">Petite</div>
-                        <div className="collection-name">Classic</div>
-                        <div className="collection-name">Soulluxe</div>
+                        <div onClick={()=>filter('collection','casual')} className="collection-name">Casual</div>
+                        <div onClick={()=>filter('collection','petite')} className="collection-name">Petite</div>
+                        <div onClick={()=>filter('collection','classic')} className="collection-name">Classic</div>
+                        <div onClick={()=>filter('collection','soulluxe')} className="collection-name">Soulluxe</div>
                     </div>
 
 

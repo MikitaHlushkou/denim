@@ -13,20 +13,23 @@ $f32: 2rem !default;
   font-size: $f18;
   text-align: left;
   border: 2px solid #151C22;
-&> button{
-  font-size: $f18;
-  background: none;
-  outline: none;
-}
-  &-btn{
-  width: 100%;
-}
-  & .filter-btnContainer{
-  display: block;
-  margin-left: -1.125rem;
-  padding: 0;
 
-}
+  & > button {
+    font-size: $f18;
+    background: none;
+    outline: none;
+  }
+
+  &-btn {
+    width: 100%;
+  }
+
+  & .filter-btnContainer {
+    display: block;
+    margin-left: -1.125rem;
+    padding: 0;
+
+  }
 }
 
 #myDropdown {
@@ -40,7 +43,6 @@ $f32: 2rem !default;
   color: #151C22;
 
 }
-
 
 
 .dropdown {

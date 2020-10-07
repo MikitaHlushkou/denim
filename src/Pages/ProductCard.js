@@ -27,14 +27,21 @@ const ProductsArray = [{
     category: 'Overalls',
     sizes: ['xs', 's', 'm', 'l', 'xl'],
     imag:[1,2,3,4,5],
-    price: 160
+    price: 160,colors:['#B0C3C7','#3B6392','#BFC3C8','#2D2E2E','#4193DA']
 }, {
     id: '2',
-    images: [prod5, prod3, prod1], category: 'Jeans', sizes: ['xs', 's', 'm'], price: 140
+    images: [prod5, prod3, prod1], category: 'Jeans', sizes: ['xs', 's', 'm'], price: 140,colors:['#B0C3C7','#3B6392','#BFC3C8']
+},{
+    id: '3',
+    images: [prod1, prod2, prod3, prod4, prod5],
+    category: 'Jeans',
+    sizes: ['xs', 's', 'm', 'l'],
+    imag:[2,5,1,3,4],
+    price: 160,colors:['#3B6392','#BFC3C8','#2D2E2E','#4193DA']
 }]
 
 let ProductCard = () => {
-    const [ProductFiltered, setProductFiltered] = useState({images:['test1',prod4],sizes:['l']});
+    const [ProductFiltered, setProductFiltered] = useState({images:['test1',prod4],sizes:['l'],colors:['red']});
 
     let Switch = (direction) => {
         if (direction === 'right') {

@@ -2,8 +2,9 @@ import React from "react";
 import Button from "../Button/Button";
 
 const FullProductInfo = ({state}) => {
-  let  {price, category,sizes} = state;
-       const size =sizes.map((el,i)=> <li key={i} className="size-item">{el}</li>)
+    let {price, category, sizes, colors} = state;
+    const size = sizes.map((el, i) => <li key={i} className="size-item">{el}</li>)
+    const color = colors.map(el => <li style={{background: `${el}`}} className="colorCircle"/>)
     return (
         <div className="product-info">
             <h2 className='product-title'>{state.category}</h2>
@@ -13,10 +14,7 @@ const FullProductInfo = ({state}) => {
             <div>
                 <h3 className='product-featureName'>Color</h3>
                 <ul className="colorContainer">
-                    <li className="colorCircle colorCircle-lightGray "/>
-                    <li className="colorCircle colorCircle-darkBlue"/>
-                    <li className="colorCircle colorCircle-gray"/>
-
+                    {color}
                 </ul>
             </div>
             <div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 let Headline =({headline})=>{
     return(
@@ -6,7 +7,7 @@ let Headline =({headline})=>{
     <h2 className="category-headline">
         {headline}
     </h2>
-    <a className='category-showLink' href="#">View all </a>
+    <Link to={'/catalog'}  className='category-showLink' href="#">View all </Link>
 </div>
     )
 }
